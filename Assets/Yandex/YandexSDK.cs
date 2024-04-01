@@ -8,7 +8,6 @@ public partial class YandexSDK : ASingleton<YandexSDK>
     [Space]
     [SerializeField] private string _lbName = "lbDBlocks";
 
-
 #if !UNITY_EDITOR
     public bool IsInitialize => IsInitializeJS();
     public bool IsPlayer => IsPlayerJS();
