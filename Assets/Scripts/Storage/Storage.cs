@@ -26,19 +26,25 @@ public static class Storage
 
     public static bool StoragesCreate()
     {
-        if (Create<JsonToYandex>())
-            return true;
-
         if (Create<JsonToLocalStorage>())
             return true;
 
         if (Create<JsonToCookies>())
             return true;
 
+#if UNITY_EDITOR
+        if (Create<JsonToFile>())
+            return true;
+
+        if (Create<JsonToPlayerPrefs>())
+            return true;
+#endif
+
         Create<EmptyStorage>();
         return false;
     }
-    public static UniTask<bool> Initialize(string key = null)
+
+    public static bool Initialize(string key = null)
     {
         return service.Initialize(string.IsNullOrEmpty(key) ? keyGlobalSave : key);
     }
@@ -77,7 +83,7 @@ public static class Storage
         }
 
         using (var request = UnityWebRequestTexture.GetTexture(url))
-        { 
+        {
             yield return request.SendWebRequest();
 
             if (request.result != Result.Success || request.downloadHandler == null)

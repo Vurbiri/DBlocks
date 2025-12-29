@@ -1,20 +1,20 @@
 <div align="center"> 
 <a href="https://play.unity.com/en/games/4f6c6852-92bd-49ff-998a-045ac81623cf/digitis" target="_blank" rel="noopener noreferrer">
-<img src="img/Cover_eng.png" alt="Cover" title="Digitis" width="500" > 
+<img src="img/Cover_eng.png" alt="Cover" title="Number Blocks" width="500" > 
 </a>
 </div>
 
 <hr>
 
-> Digitis is a game that combines Tetris and match-three mechanics. The difficulty level can be adjusted to suit everyone, so everyone can find their own comfortable game mode.
->> The goal of the game is to arrange blocks of digits into clusters according to their value. The cluster contains blocks that are adjacent in a straight line (top, left, bottom, right). To remove a group of 2s, you only need two blocks, a group of 3s - three blocks, and so on up to 9s - there must be at least nine of them. When a cluster is deleted, all adjacent 1s and their clusters are destroyed.
-Points are awarded for each block removed according to its value. 1s score points based on the value of the cluster they join.
-You can replace all the blocks of the next shape with Zero-Bombs. When the Zero-Bomb comes to a stop, it will explode and destroy blocks (without scoring any points) within a radius of two cells in a straight line and one cell in a diagonal line.
-
+> Number Blocks is a game that combines Wood Blocks and match-three mechanics. The difficulty level can be adjusted to suit everyone, so everyone can find their own comfortable game mode.
+>> The goal of the game is to arrange blocks of numbers into clusters according to their value. The cluster contains blocks that are adjacent in a straight line (top, left, bottom, right). To remove a cluster of 2s, you only need two blocks, a cluster of 3s - three blocks, and so on up to 9s - there must be at least nine of them.
+When a cluster is removed, all adjacent 1s and their clusters are destroyed.
+You have Zero-Bombs at your disposal. When the Zero-Bombs is placed on the board, it will explode and destroy blocks (without scoring any points) within a one-cell radius.
+When a block is placed on the board, it scores points equal to its value. The points for removing a block are twice the value of the block. Each block removed that exceeds the required minimum in the cluster gives double points (value multiplied by four). 1s score points based on the value of the cluster they join (no bonus points for exceeding the minimum).
 <hr>
 
 <div align="center"> 
-<a href="https://youtu.be/3ma5varQPe4" target="_blank" rel="noopener noreferrer">
+<a href="https://youtu.be/s3BJxC1KsRc" target="_blank" rel="noopener noreferrer">
 <img src="img/YouTube.gif" alt="YouTube" title="YouTube" width="522"> 
 </a>
 </div>

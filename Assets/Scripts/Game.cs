@@ -107,9 +107,6 @@ public class Game : MonoBehaviour
             _controller.ControlEnable = false;
             _gameArea.Open();
             _gameUI.Close();
-
-            if (_dataGame.IsRecord)
-                _gameUI.SetScore(_dataGame.Score);
            
             yield return _waitSwitching;
 
@@ -141,10 +138,6 @@ public class Game : MonoBehaviour
             EventGameOver?.Invoke();
             _controller.ControlEnableGame = false;
 
-            bool IsRecord = _dataGame.IsRecord;
-            if (IsRecord)
-                _gameUI.SetScore(_dataGame.Score);
-
             yield return _waitGameOverMessage;
 
             _gameArea.ResetState();
@@ -155,10 +148,7 @@ public class Game : MonoBehaviour
             _dataGame.ResetScoreEvent();
 
             _gameArea.Close();
-            if (IsRecord)
-                _gameUI.OpenLeaderboard();
-            else
-                _gameUI.Open();
+            _gameUI.Open();
 
             yield return _waitSwitching;
         }
