@@ -1,5 +1,5 @@
 <div align="center"> 
-<a href="https://play.unity.com/en/games/4f6c6852-92bd-49ff-998a-045ac81623cf/digitis" target="_blank" rel="noopener noreferrer">
+<a href="https://play.unity.com/en/games/27434528-f6d5-4ece-92e2-c67bf8343e2b/number-blocks" target="_blank" rel="noopener noreferrer">
 <img src="img/Cover_eng.png" alt="Cover" title="Number Blocks" width="500" > 
 </a>
 </div>
@@ -22,7 +22,7 @@ When a block is placed on the board, it scores points equal to its value. The po
 <br>
 
 <div align="center"> 
-<a href="https://play.unity.com/en/games/4f6c6852-92bd-49ff-998a-045ac81623cf/digitis" target="_blank" rel="noopener noreferrer">
+<a href="https://play.unity.com/en/games/27434528-f6d5-4ece-92e2-c67bf8343e2b/number-blocks" target="_blank" rel="noopener noreferrer">
 <img src="img/PlayButton.png" alt="Play" title="Play"> 
 </a>
 </div>
